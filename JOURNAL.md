@@ -15,6 +15,6 @@ The `POST /reviews` endpoint (`api/routes/reviews.py`) creates a review record a
 
 **Branch name:** `test/88-post-reviews-no-documents-test`
 
-**Setup confirmation:** [ ] App runs locally at localhost:5173
+**Setup confirmation:** [x] App runs locally at localhost:5173
 
 **Cohort ledger:** [ ] Issue added to cohort ledger
