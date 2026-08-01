@@ -52,7 +52,7 @@ None currently.
 
 ### Check-in 2 (end of week)
 
-**PR link:** [pending — to be filled in once opened]
+**PR link:** https://github.com/ascherj/pathreview/pull/497
 
 **Branch:** `test/88-post-reviews-no-documents-test`
 
@@ -76,8 +76,12 @@ debt" sense described in the Week 9 instructions — see `PLAN.md`'s
 "Pre-existing `make check` failures" section for the full verified numbers:
 `ruff` 182/182 identical on `main` vs. this branch; `pytest tests/unit` 53
 failed/384 passed here vs. 53 failed/375 passed on `main`, same 53 failures,
-9 extra passing tests are this PR's; `mypy` scoped to the two files this PR
-touches fixes several pre-existing errors and introduces none, verified via
-clean-room diff)
+9 extra passing tests are this PR's; `mypy` scoped to the three files this PR
+touches (`reviews.py`, `review_service.py`, `profile_service.py`) fixes
+several pre-existing errors and introduces none, verified via clean-room
+diff — full detail in `PLAN.md`)
 
-**Draft PR feedback received from:** [pending]
+**Draft PR feedback received from:** `theoneineed` (PR comment): "Nice fix!
+Validating profile content before creating a review prevents invalid jobs
+from being queued, and the added regression tests make the new behavior
+clear and well covered." No changes requested — marking ready for review.
