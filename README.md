@@ -69,13 +69,3 @@ make run           # Start the dev servers
 ## License
 
 MIT
-
-
-You have reusable internal components (filters, tables, storage, and other site-specific pieces). Those get composed and exposed cleanly through page objects. The pages then become the stable interface that test cases actually call.
-With that structure in mind, here are the most useful skills to add, tuned specifically to your setup:
-1.  Component Quality skill Reviews the internal building blocks (filters, tables, storage helpers, etc.) for consistency, proper typing, error handling, and reusability so the foundation stays solid.
-2.  Page Composition skill Checks that pages correctly assemble and expose those components — correct method signatures, no leaking internal details, consistent patterns across all pages.
-3.  Locator & Interaction skill Focuses on how components and pages interact with the DOM — prefers resilient locators and clean action methods that tests can rely on.
-4.  Test Case Usage skill Looks at the generated Playwright tests and verifies they only talk to the page layer (not diving into components or raw locators), keeping the tests readable and maintainable.
-5.  Cross-layer Consistency skill Makes sure naming, patterns, and contracts stay aligned from component → page → test case so the whole stack doesn’t drift over time.
-These five sit nicely on top of the framework skill and TypeScript skill you already have. The Component Quality and Page Composition ones will probably give you the biggest leverage right now.
